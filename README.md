@@ -33,6 +33,7 @@
 - npm i -D @babel/preset-env @babel/preset-react @babel/preset-typescript
 - npm i -D babel-loader babel-plugin-jsx-remove-data-test-id babel-plugin-transform-amd-to-commonjs
 - npm i -D babel-plugin-named-asset-import
+
 ### Test
 - * npm i -D playwright jest-playwright-preset jest-allure jest allure-js-commons
 - * npm i -D @testing-library/user-event @testing-library/react @testing-library/jest-dom
@@ -40,14 +41,14 @@
 
 
 ### Extra 
-- * установленно
-- * npm i -D rimraf process node-fetch identity-obj-proxy husky cross-env
-- * npm i -D axios  husky 
-- * npm i -D react-beautiful-dnd react-datepicker react-dropzone prop-types
-- npm i -D date-fns qs rc-table react-router-dom
-- * react-dev-utils classnames
 
-### ?
+- npm i -D rimraf process node-fetch identity-obj-proxy husky cross-env
+- npm i -D axios  husky 
+- npm i -D react-beautiful-dnd react-datepicker react-dropzone prop-types
+- npm i -D date-fns qs rc-table react-router-dom
+- react-dev-utils classnames
+
+### ----
 - camelcase fingerprintjs2 object-to-formdata optimize-css-assets-webpack-plugin
 - pnp-webpack-plugin dotenv
 - postcss-flexbugs-fixes postcss-loader postcss-normalize postcss-preset-env postcss-safe-parser
