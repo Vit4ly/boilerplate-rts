@@ -44,12 +44,12 @@ module.exports = {
             jsx: true,
         },
         ecmaVersion: 'latest',
-        sourceType: 'module',
+        sourceType: 'module'
     },
     settings: {
         'import/resolver': {
-            node: { extensions: ['.js', '.jsx', '.ts', '.tsx'] },
-        },
+            node: {extensions: ['.js', '.jsx', '.ts', '.tsx']}
+        }
     },
     plugins: [
         'react',

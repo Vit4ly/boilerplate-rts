@@ -12,7 +12,7 @@ const config: Configuration = {
     devtool: isDev ? 'eval' : 'source-map',
     optimization: optimization(isProd),
     target: ['web', 'es5'],
-    entry: './src/index.tsx',
+    entry: path.resolve(__dirname, './src/index.tsx'),
     output: {
         path: path.resolve(__dirname, 'out'),
         filename: filename('js', isProd),
@@ -25,12 +25,12 @@ const config: Configuration = {
         plugins: [new TsconfigPathsPlugin()],
         extensions: ['.ts', '.tsx', '.js', '.jsx'],
         alias: {
-            '@': path.resolve(__dirname, './src/')
+            '@': path.resolve(__dirname, './src')
         }
     },
     module: {
         strictExportPresence: true,
-       rules,
+        rules,
     },
     plugins,
 }

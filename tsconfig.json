@@ -5,7 +5,7 @@
     "tests",
     "tools",
     "types/styleTypings.d.ts",
-    "types/consts.d.ts",
+    "types/const.d.ts",
     "webpack.config.ts"
   ],
   "compilerOptions": {
@@ -66,7 +66,9 @@
     "baseUrl": "src"
     /* Base directory to resolve non-absolute module names. */,
     "paths": {
-      "@/*": ["*"]
+      "@/*": [
+        "*"
+      ]
     }
     /* A series of entries which re-map imports to lookup locations relative to the 'baseUrl'. */,
     "allowSyntheticDefaultImports": true
@@ -78,6 +80,10 @@
     /* Advanced Options */
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true,
-    "types": ["@types/jest", "jest-playwright-preset", "expect-playwright"]
+    "types": [
+      "@types/jest",
+      "jest-playwright-preset",
+      "expect-playwright"
+    ]
   }
 }

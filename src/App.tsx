@@ -1,10 +1,11 @@
 import React from 'react';
-import Logo from './assets/image/'
+import IconBase from "@/components/Basic/IconBase";
 
 const App = () => {
     return (
         <div>
             <h1>App</h1>
+            <IconBase title={'settings'}/>
         </div>
     );
 };
