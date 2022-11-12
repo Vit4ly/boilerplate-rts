@@ -72,9 +72,13 @@ const rules = [
     styleLoader(/\.css$/),
     styleLoader(/\.scss$/, 'sass-loader'),
     {
-    test: /\.(png|jpg|jpeg|gif|svg)$/i,
-        type: 'asset'
-}
+        test: /\.(?:ico|gif|png|jpg|jpeg|svg)$/i,
+        type: 'asset/resource',
+    },
+    {
+        test: /\.(woff(2)?|eot|ttf|otf|)$/,
+        type: 'asset/inline',
+    },
 ];
 
 export default rules;
