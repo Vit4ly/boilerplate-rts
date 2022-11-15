@@ -4,8 +4,9 @@
     "src",
     "tests",
     "tools",
+    "jest.config.ts",
     "types/styleTypings.d.ts",
-    "types/const.d.ts",
+    "types/consts.d.ts",
     "webpack.config.ts"
   ],
   "compilerOptions": {
