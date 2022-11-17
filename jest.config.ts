@@ -1,7 +1,8 @@
-import type { Config } from '@jest/types';
-import { jsWithBabel as tsjPreset } from 'ts-jest/presets';
+// import {compilerOptions} from './tsconfig.json'
+import type {JestConfigWithTsJest} from 'ts-jest'
+import {jsWithBabel as tsjPreset} from 'ts-jest/presets'
 
-const config: Config.InitialOptions = {
+const config: JestConfigWithTsJest = {
     globals: {
         BUILD_VERSION: '',
         LATEST_COMMIT_HASH: '',
@@ -14,14 +15,18 @@ const config: Config.InitialOptions = {
     transform: {
         ...tsjPreset.transform,
     },
+    collectCoverageFrom: [
+        '**/*.{js,jsx,ts,tsx}',
+        '!**/node_modules/**',
+        '!**/vendor/**',
+    ],
     transformIgnorePatterns: ['<rootDir>/node_modules/'],
     verbose: true,
     moduleNameMapper: {
         '^@/(.*)$': '<rootDir>/src/$1',
-        '^.+\\.(css|less)$': 'identity-obj-proxy',
+        '^.+\\.(css|scss)$': 'identity-obj-proxy',
         '\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$': '__mocks__/fileMock.ts',
     },
 };
 
 export default config;
-

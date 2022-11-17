@@ -1,5 +1,5 @@
 {
-  "name": "Boilerplate",
+  "name": "boilerplate",
   "version": "1.0.0",
   "description": "",
   "scripts": {
@@ -8,7 +8,8 @@
     "build": "cross-env NODE_ENV=production webpack --mode production",
     "build:dev": "cross-env NODE_ENV=development webpack --mode development",
     "test": "npm run test:unit && npm run test:e2e",
-    "test:unit": "jest --verbose ./__tests__/unit",
+    "test:unit": "jest --verbose ./src",
+    "test:unit:copy": "jest --verbose ./__tests__/unit",
     "test:e2e": "jest --config=jest-playwright.config.ts --verbose __tests__/e2e --passWithNoTests",
     "test:coverage": "jest --config=jest-playwright.config.ts --coverage",
     "stats": "cross-env SMP=OFF webpack --json > stats.json && webpack-bundle-analyzer stats.json out",
@@ -64,6 +65,9 @@
     "html-webpack-plugin": "^5.5.0",
     "husky": "^8.0.1",
     "identity-obj-proxy": "^3.0.0",
+    "jest": "^29.3.1",
+    "jest-environment-jsdom": "^29.3.1",
+    "jest-jasmine2": "^29.3.1",
     "node-fetch": "^3.2.10",
     "prettier": "^2.7.1",
     "pretty": "^2.0.0",

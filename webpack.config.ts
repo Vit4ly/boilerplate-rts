@@ -11,7 +11,7 @@ const config: Configuration = {
     mode: isDev ? 'development' : undefined,
     devtool: isDev ? 'eval' : 'source-map',
     optimization: optimization(isProd),
-    target: ['web', 'es5'],
+    target: ['web', 'es6'],
     entry: path.resolve(__dirname, './src/index.tsx'),
     output: {
         path: path.resolve(__dirname, 'out'),
