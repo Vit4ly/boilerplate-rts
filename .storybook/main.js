@@ -27,5 +27,3 @@ module.exports = {
         return config;
     },
 };
-let dir = path.resolve(__dirname, './src')
-console.log(dir)
